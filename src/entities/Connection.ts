@@ -13,7 +13,7 @@ import { User } from "./User";
 @Entity('connections')
 export class Connection {
 
-  @PrimaryColumn('uuid')
+  @PrimaryColumn()
   id: string;
 
   @Column()

@@ -10,7 +10,7 @@ import { v4 as uuid } from 'uuid';
 @Entity('settings')
 export class Setting {
 
-  @PrimaryColumn('uuid')
+  @PrimaryColumn()
   id: string;
   
   @Column()

@@ -6,7 +6,7 @@ import { User } from "./User";
 @Entity('messages')
 export class Message {
 
-  @PrimaryColumn('uuid')
+  @PrimaryColumn()
   id: string;
 
   @Column()

@@ -9,7 +9,11 @@ interface IConnectionCreate {
   id?: string;
 }
 
-export class ConnetionsService {
+interface IFindByUserId {
+  user_id: string;
+}
+
+export class ConnectionsService {
   private connectionsRepository: Repository<Connection>
 
   constructor() {
@@ -26,6 +30,14 @@ export class ConnetionsService {
 
     await this.connectionsRepository.save(connection);
 
+    return connection;
+  }
+
+  async findByUserId({ user_id }: IFindByUserId) {
+    const connection = await this.connectionsRepository.findOne({ 
+      user_id,
+    });
+    
     return connection;
   }
 }
