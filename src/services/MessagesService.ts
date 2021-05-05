@@ -9,6 +9,10 @@ interface IMessageCreate {
   user_id: string;
 }
 
+interface IMessageListByUser {
+  user_id: string;
+}
+
 export class MessageService {
   private messageRepository: Repository<Message>;
 
@@ -28,7 +32,7 @@ export class MessageService {
     return message;
   }
   
-  async listByUser(user_id: string) {
+  async listByUser({ user_id }: IMessageListByUser) {
 
     const list = await this.messageRepository.find({
       where: { user_id },
