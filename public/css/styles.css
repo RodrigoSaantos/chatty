@@ -136,7 +136,7 @@ body {
   flex-direction: column;
   background: #6f5eab;
   padding: 10px;
-  margin: 10px 0;
+  /* margin: 10px 0; */
   border: none;
 }
 
@@ -276,6 +276,7 @@ input[type="text"]:focus {
   border: 1px solid #ededed;
   margin-top: 5px;
   border-radius: 10px;
+  max-width: 350px;
 }
 
 .email {
