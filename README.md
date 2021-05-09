@@ -9,19 +9,19 @@
 <div align="center">
 
   <a href="">
-    <img src="https://img.shields.io/github/languages/count/RodrigoSaantos/nlw4-net-promoter-score.svg?color=%238257E5" alt="languages" >
+    <img src="https://img.shields.io/github/languages/count/RodrigoSaantos/chatty.svg?color=%238257E5" alt="languages" >
   </a>
 
   <a href="">
-    <img src="https://img.shields.io/github/languages/top/RodrigoSaantos/nlw4-net-promoter-score.svg?color=%238257E5" alt="languagesTop" >
+    <img src="https://img.shields.io/github/languages/top/RodrigoSaantos/chatty.svg?color=%238257E5" alt="languagesTop" >
   </a>
 
   <a href="">
-    <img src="https://img.shields.io/github/repo-size/RodrigoSaantos/nlw4-net-promoter-score.svg?color=%238257E5" alt="repo-size" >
+    <img src="https://img.shields.io/github/repo-size/RodrigoSaantos/chatty.svg?color=%238257E5" alt="repo-size" >
   </a>
 
   <a href="">
-    <img src="https://img.shields.io/github/last-commit/RodrigoSaantos/nlw4-net-promoter-score.svg?color=%238257E5" alt="last-commit" >
+    <img src="https://img.shields.io/github/last-commit/RodrigoSaantos/chatty.svg?color=%238257E5" alt="last-commit" >
   </a>
   
 </div>
@@ -118,7 +118,7 @@ By Rodrigo Santos 👋🏽 Find me:
 
 <h1 align="center">
   <div style="display: flex; flex-direction: row;">
-    <img width="900" style="border-radius: 10px" height="auto" alt="demo" title="demo" src="public/assets/demo.gif" />
+    <img width="900" style="border-radius: 10px" height="auto" alt="demo" title="demo" src="public/images/demo.gif" />
   <div>
 </h1>
 
