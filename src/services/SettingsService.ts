@@ -45,7 +45,7 @@ export class SettingsService {
   }
 
   async update({ chat, username}: SettingsProps) {
-    const settings = await this.settingsRepository
+    await this.settingsRepository
       .createQueryBuilder()
       .update(Setting)
       .set({ chat })

@@ -13,7 +13,7 @@ interface IMessageListByUser {
   user_id: string;
 }
 
-export class MessageService {
+export class MessagesService {
   private messageRepository: Repository<Message>;
 
   constructor() {

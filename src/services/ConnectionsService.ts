@@ -13,6 +13,15 @@ interface IFindByUserId {
   user_id: string;
 }
 
+interface IFindBySocketId {
+  socket_id: string;
+}
+
+interface IUpdateAdminId {
+  user_id: string;
+  admin_id: string;
+}
+
 export class ConnectionsService {
   private connectionsRepository: Repository<Connection>
 
@@ -48,5 +57,24 @@ export class ConnectionsService {
     });
     
     return connections;
+  }
+
+  async findBySocketId({ socket_id }: IFindBySocketId) {
+    const connection = await this.connectionsRepository.findOne({
+      socket_id,
+    });
+
+    return connection;
+  }
+
+  async updateAdminId({ user_id, admin_id }: IUpdateAdminId) {
+    await this.connectionsRepository
+      .createQueryBuilder()
+      .update(Connection)
+      .set({ admin_id })
+      .where("user_id = :user_id", {
+        user_id,
+      })
+      .execute()
   }
 }
